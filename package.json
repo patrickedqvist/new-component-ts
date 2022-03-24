@@ -1,14 +1,14 @@
 {
-  "name": "new-component",
-  "version": "3.0.2",
-  "description": "CLI for creating new React components",
-  "homepage": "https://github.com/joshwcomeau/new-component",
+  "name": "new-component-ts",
+  "version": "1.0.0",
+  "description": "CLI for creating new React components (forked of joshwcomeau/new-component)",
+  "homepage": "https://github.com/patrickedqvist/new-component-ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshwcomeau/new-component"
+    "url": "https://github.com/patrickedqvist/new-component-ts"
   },
   "bugs": {
-    "url": "https://github.com/joshwcomeau/new-component/issues"
+    "url": "https://github.com/patrickedqvist/new-component-ts/issues"
   },
   "main": "src/index.js",
   "scripts": {
@@ -19,9 +19,10 @@
     "reactjs",
     "cli",
     "component",
-    "boilerplate"
+    "boilerplate",
+    "typescript"
   ],
-  "author": "Joshua Comeau",
+  "author": "Patrick Edqvist",
   "license": "MIT",
   "bin": {
     "new-component": "./src/index.js"
@@ -30,5 +31,11 @@
     "chalk": "^2.4.1",
     "commander": "^2.15.1",
     "prettier": "1.5.3"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.42",
+    "@types/react-dom": "^17.0.14",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

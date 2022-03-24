@@ -1,14 +1,16 @@
-<p align="center">
-  <img src="https://github.com/joshwcomeau/new-component/blob/master/docs/logo@2x.png?raw=true" width="285" height="285" alt="new-component logo">
+<p>
+  <img src="https://github.com/patrickedqvist/new-component-ts/blob/main/docs/logo@2x.png?raw=true" width="285" height="285" alt="new-component logo">
   <br>
-  <a href="https://www.npmjs.org/package/new-component"><img src="https://img.shields.io/npm/v/new-component.svg?style=flat" alt="npm"></a>
+  <a href="https://www.npmjs.org/package/new-component-ts"><img src="https://img.shields.io/npm/v/new-component.svg?style=flat" alt="npm"></a>
 </p>
 
-# `new-component`
+This is a typescript variant, forked of the great work by Josh W Comeau [https://github.com/patrickedqvist/new-component-ts](https://github.com/patrickedqvist/new-component-ts)
+
+# `new-component-ts`
 
 ### Simple, customizable utility for adding new React components to your project.
 
-<img src="https://github.com/joshwcomeau/new-component/blob/master/docs/divider@2x.png?raw=true" width="888" height="100" role="presentation">
+<img src="https://github.com/patrickedqvist/new-component-ts/blob/main/docs/divider@2x.png?raw=true" width="888" height="100" role="presentation">
 
 Anyone else sick of writing the same component boilerplate, over and over?
 
@@ -40,24 +42,26 @@ $ npm i -g new-component
 `cd` into your project's directory, and try creating a new component:
 
 <p align="center">
-  <img src="https://github.com/joshwcomeau/new-component/blob/master/docs/demo.gif?raw=true" width="888" height="369" alt="demo of CLI functionality">
+  <img src="https://github.com/patrickedqvist/new-component-ts/blob/main/docs/demo.gif?raw=true" width="888" height="369" alt="demo of CLI functionality">
 </p>
 
 Your project will now have a new directory at `src/components/Button`. This directory has two files:
 
 ```jsx
-// `Button/index.js`
+// `Button/index.tsx`
 export { default } from './Button';
 ```
 
 ```jsx
-// `Button/Button.js`
-import React, { Component } from 'react';
+// `Button/Button.tsx`
+import type { FC } from 'react';
 
-class Button extends Component {
-  render() {
+interface Props {}
+
+const Button: FC<Props> = () => {
+  return (
     return <div />;
-  }
+  )
 }
 
 export default Button;

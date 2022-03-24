@@ -46,7 +46,7 @@ program
   )
   .option(
     '-x, --extension <fileExtension>',
-    'Which file extension to use for the component (default: "js")',
+    'Which file extension to use for the component (default: "tsx")',
     config.extension
   )
   .parse(process.argv);
@@ -54,7 +54,7 @@ program
 const [componentName] = program.args;
 
 // Find the path to the selected template file.
-const templatePath = `./templates/${program.type}.js`;
+const templatePath = `./templates/${program.type}.tsx`;
 
 // Get all of our file paths worked out, for the user's project.
 const componentDir = `${program.dir}/${componentName}`;

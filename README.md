@@ -4,11 +4,11 @@
   <a href="https://www.npmjs.org/package/new-component-ts"><img src="https://img.shields.io/npm/v/new-component.svg?style=flat" alt="npm"></a>
 </p>
 
-This is a typescript variant, forked of the great work by Josh W Comeau [https://github.com/patrickedqvist/new-component-ts](https://github.com/patrickedqvist/new-component-ts)
+This is a typescript variant, forked of the great work by Josh W Comeau [https://github.com/joshwcomeau/new-component](https://github.com/joshwcomeau/new-component)
 
 # `new-component-ts`
 
-### Simple, customizable utility for adding new React components to your project.
+### Simple, customizable utility for adding new Typescript React components to your project.
 
 <img src="https://github.com/patrickedqvist/new-component-ts/blob/main/docs/divider@2x.png?raw=true" width="888" height="100" role="presentation">
 
@@ -41,18 +41,18 @@ $ npm i -g new-component
 
 `cd` into your project's directory, and try creating a new component:
 
-<p align="center">
+<p>
   <img src="https://github.com/patrickedqvist/new-component-ts/blob/main/docs/demo.gif?raw=true" width="888" height="369" alt="demo of CLI functionality">
 </p>
 
 Your project will now have a new directory at `src/components/Button`. This directory has two files:
 
-```jsx
+```tsx
 // `Button/index.tsx`
 export { default } from './Button';
 ```
 
-```jsx
+```tsx
 // `Button/Button.tsx`
 import type { FC } from 'react';
 
@@ -60,14 +60,14 @@ interface Props {}
 
 const Button: FC<Props> = () => {
   return (
-    return <div />;
+    return <div />
   )
 }
 
 export default Button;
 ```
 
-> This structure might appear odd to you, with an `index.js` that points to a named file. I've found this to be an optimal way to set up components; the `index.js` allows you to `import` from the directory (eg. `import Button from 'components/Button'`), while having `Button.js` means that you're never lost in a sea of `index.js` files in your editor.
+> This structure might appear odd to you, with an `index.tsx` that points to a named file. I've found this to be an optimal way to set up components; the `index.tsx` allows you to `import` from the directory (eg. `import Button from 'components/Button'`), while having `Button.tsx` means that you're never lost in a sea of `index.tsx` files in your editor.
 >
 > This structure is not currently configurable, but I'm happy to consider implementing alternatives!
 

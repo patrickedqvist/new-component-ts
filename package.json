@@ -1,6 +1,6 @@
 {
   "name": "new-component-ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI for creating new React components (forked of joshwcomeau/new-component)",
   "homepage": "https://github.com/patrickedqvist/new-component-ts",
   "repository": {
@@ -25,7 +25,7 @@
   "author": "Patrick Edqvist",
   "license": "MIT",
   "bin": {
-    "new-component": "./src/index.js"
+    "new-component-ts": "./src/index.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",

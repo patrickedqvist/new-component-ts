@@ -45,8 +45,8 @@ program
     config.dir
   )
   .option(
-    '-x, --extension <fileExtension>',
-    'Which file extension to use for the component (default: "tsx")',
+    '-x, --ext <fileExtension>',
+    '`Which file extension to use for the component (default: "tsx")`',
     config.extension
   )
   .parse(process.argv);

@@ -33,10 +33,10 @@ Install via NPM:
 
 ```bash
 # Using Yarn:
-$ yarn global add new-component
+$ yarn global add new-component-ts
 
 # or, using NPM
-$ npm i -g new-component
+$ npm i -g new-component-ts
 ```
 
 `cd` into your project's directory, and try creating a new component:
@@ -87,6 +87,13 @@ The resulting values are merged, with command-line values overwriting local valu
 
 ## API Reference
 
+| Flag            | Description  | Options                              |
+|-----------------|--------------|--------------------------------------|
+| `-t` / `--type` | Type of React component to generate (default: "functional") | `class`, `pure-class` or `functional` |
+| `-d` / `--dir`  | Path to the "components" directory (default: "src/components") |                      |
+| `-x` / `--ext`  | Which file extension to use for the component (default: "tsx") |                      |
+
+
 ### Type
 
 Control the type of component created:
@@ -121,7 +128,7 @@ Controls the file extension for the created components. Can be either `js` (defa
 
 **Usage:**
 
-Command line: `--extension <value>` or `-x <value>`
+Command line: `--ext <value>` or `-x <value>`
 
 JSON config: `{ "extension": <value> }`
 <br />

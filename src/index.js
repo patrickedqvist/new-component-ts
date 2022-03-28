@@ -52,14 +52,15 @@ program
   .parse(process.argv);
 
 const [componentName] = program.args;
+const options = program.opts();
 
 // Find the path to the selected template file.
-const templatePath = `./templates/${program.type}.tsx`;
+const templatePath = `./templates/${options.type}.tsx`;
 
 // Get all of our file paths worked out, for the user's project.
-const componentDir = `${program.dir}/${componentName}`;
-const filePath = `${componentDir}/${componentName}.${program.extension}`;
-const indexPath = `${componentDir}/index.${program.extension}`;
+const componentDir = `${options.dir}/${componentName}`;
+const filePath = `${componentDir}/${componentName}.${options.ext}`;
+const indexPath = `${componentDir}/index.${options.ext}`;
 
 // Our index template is super straightforward, so we'll just inline it for now.
 const indexTemplate = prettify(`\

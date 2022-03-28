@@ -1,6 +1,6 @@
 {
   "name": "new-component-ts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CLI for creating new React components (forked of joshwcomeau/new-component)",
   "homepage": "https://github.com/patrickedqvist/new-component-ts",
   "repository": {
